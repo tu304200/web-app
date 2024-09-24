@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Kết hợp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ứng dụng Kết hợp</h1>
+    <div id="auth">
+        <h2>Đăng nhập/Đăng ký</h2>
+        <form id="auth-form">
+            <input type="text" id="username" required placeholder="Tên người dùng">
+            <input type="password" id="password" required placeholder="Mật khẩu">
+            <button type="submit">Đăng nhập</button>
+            <button type="button" id="register-btn">Đăng ký</button>
+        </form>
+    </div>
+    
+    <div id="task-section" style="display: none;">
+        <h2>Quản lý Công việc</h2>
+        <form id="task-form">
+            <input type="text" id="task-input" required placeholder="Nhập công việc mới">
+            <select id="category-select">
+                <option value="công việc">Công việc</option>
+                <option value="gia đình">Gia đình</option>
+                <option value="học tập">Học tập</option>
+            </select>
+            <button type="submit">Thêm</button>
+        </form>
+        <ul id="task-list"></ul>
+        <a href="#blog" onclick="showBlog()">Đi đến Blog Cá Nhân</a>
+    </div>
+
+    <div id="blog-section" style="display: none;">
+        <h2>Blog Cá Nhân</h2>
+        <form id="post-form">
+            <input type="text" id="post-title" required placeholder="Tiêu đề bài viết">
+            <textarea id="post-content" required placeholder="Nội dung bài viết"></textarea>
+            <input type="text" id="post-tags" placeholder="Thêm thẻ (tags)">
+            <button type="submit">Thêm bài viết</button>
+        </form>
+        <ul id="post-list"></ul>
+        <a href="#tasks" onclick="showTasks()">Quay lại Quản lý Công việc</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

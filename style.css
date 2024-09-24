@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+}
+
+button {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-section {
+    margin-top: 10px;
+}
